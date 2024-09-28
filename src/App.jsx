@@ -1,10 +1,12 @@
 import LoadInfinite from "./BackToBusiness/LoadInfinite/LoadInfinite"
+import TreeView from "./Components/TreeView/TreeView"
+import menus from "./Components/TreeView/data"
 function App() {
 
   return (
   
     <div>
-     <LoadInfinite />
+     <TreeView menus={menus}/>
     </div>
       
 
