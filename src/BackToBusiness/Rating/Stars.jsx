@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BiStar } from 'react-icons/bi'
-const Stars = ({stars = 10}) => {
+import { CiStar } from "react-icons/ci";
+const Stars = ({stars = 5}) => {
   const [hover,setHover] = useState(0);
   const [rating,setRating] = useState(0);
 
@@ -21,9 +22,10 @@ const Stars = ({stars = 10}) => {
       {
         [...Array(stars)].map((_,index) => {
           index += 1
-          return  <BiStar  key= {index} onClick={() => {handleClick(index)}}
+          return  <CiStar  key= {index}
+           onClick={() => {handleClick(index)}}
           onMouseMove={() => {handleMouseMove(index)}} 
-          onMouseLeave={() => {handleMouseLeave}}
+          onMouseLeave={() => {handleMouseLeave()}}
           size={40}
           className={index <= (hover || rating) ? 
             'text-yellow-400' : "text-black"}/>

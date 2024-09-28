@@ -4,12 +4,13 @@ const LoadMoreProducts = () => {
     const [products,setProducts] = useState([]);
     const [count,setCount] = useState(0);
     const [loading,setLoading] = useState(false);
+    const [disabled,setDisabledButton] = useState(false);
 
     
     async function fetchProducts(){
         try{
             setLoading(true);
-            const response = await fetch(`https://dummyjson.com/products?limit=10&skip=${count === 0 ? 0 : count * 20}`);
+            const response = await fetch(`https://dummyjson.com/products?limit=20&skip=${count === 0 ? 0 : count * 20}`);
             const data = await response.json();
 
             if(data  && data.products &&  data.products.length){
@@ -34,7 +35,7 @@ const LoadMoreProducts = () => {
 
     useEffect(() => {
         fetchProducts();
-    },[]);
+    },[count]);
 
 
     loading ? <div>Loading...</div> : <div>Could not found products!</div>;
