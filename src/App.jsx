@@ -1,17 +1,5 @@
-import LoadInfinite from "./BackToBusiness/LoadInfinite/LoadInfinite"
-import TreeView from "./Components/TreeView/TreeView"
-import menus from "./Components/TreeView/data"
 function App() {
-
-  return (
-  
-    <div>
-     <TreeView menus={menus}/>
-    </div>
-      
-
-
-  )
+  return <div></div>;
 }
 
-export default App
+export default App;
