@@ -1,4 +1,5 @@
 import Accordian from "./components/Accordian/Accordian";
+import ParentModelPopper from "./components/CustomModalPopup/ParentModelPopper";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
 import LoadMore from "./components/InfiniteScroll/InfiniteScroll";
 import QrGenerator from "./components/QrCodeGenerator/QrGenerator";
@@ -12,7 +13,7 @@ import TreeView from "./components/TreeView/TreeView";
 function App() {
   return (
     <div>
-      <TabsParent />
+      <ParentModelPopper/>
     </div>
   );
 }
