@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
+{/* <ImageSlider url={'https://picsum.photos/v2/list?'} page={2} limit={10}/> */}
+
 const ImageSlider = ({ url, page = 1, limit }) => {
   const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
