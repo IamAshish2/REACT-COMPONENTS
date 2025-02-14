@@ -6,12 +6,13 @@ import Random from "./components/RandomColorGenerator/Random";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import StarRating from "./components/StarRating/StarRating";
 import ThemeSwitcher from "./components/SwitchTheme/ThemeSwitcher";
+import TabsParent from "./components/Tabs/TabsParent";
 import menus from "./components/TreeView/data";
 import TreeView from "./components/TreeView/TreeView";
 function App() {
   return (
     <div>
-      <ScrollIndicator  url={'https://dummyjson.com/products?limit=100'}/>
+      <TabsParent />
     </div>
   );
 }
