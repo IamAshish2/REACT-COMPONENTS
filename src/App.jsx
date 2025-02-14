@@ -1,9 +1,11 @@
 import Accordian from "./components/Accordian/Accordian";
-
+import Random from "./components/RandomColorGenerator/Random";
 function App() {
-  return <div>
-    <Accordian/>
-  </div>;
+  return (
+    <div>
+      <Random />
+    </div>
+  );
 }
 
 export default App;
