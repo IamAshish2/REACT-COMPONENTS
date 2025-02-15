@@ -11,10 +11,11 @@ import TabsParent from "./components/Tabs/TabsParent";
 import menus from "./components/TreeView/data";
 import TreeView from "./components/TreeView/TreeView";
 import GithubProfileLookup from "./components/GithubProfileFinder/GithubProfileLookup";
+import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComplete";
 function App() {
   return (
     <div>
-      <GithubProfileLookup />
+      <SearchAutoComplete />
     </div>
   );
 }
