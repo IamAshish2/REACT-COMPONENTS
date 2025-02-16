@@ -1,5 +1,5 @@
 import { FaSkullCrossbones } from "react-icons/fa6";
-const Model = ({ id, header, body, footer, onClose }) => {
+const Model = ({ id, header, body, footer, onClose = () => {} }) => {
   return (
     <div id={id || "defalut-id"} className="border w-96 h-96 relative mt-2">
       <span onClick={onClose} className="absolute top-1 right-1">
