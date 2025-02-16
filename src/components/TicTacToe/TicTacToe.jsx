@@ -41,6 +41,7 @@ const TicTacToe = () => {
 
   function handleMove(getMoveIndex) {
     let cpyArray = [...squares];
+    if (cpyArray[getMoveIndex] || getWinner(cpyArray) !== null) return;
     for (let i = 0; i < squares.length; i++) {
       if (getMoveIndex === i) {
         cpyArray[i] = xIsPlaying ? "X" : "O";
@@ -60,9 +61,10 @@ const TicTacToe = () => {
     }
   }, [squares, xIsPlaying, status]);
 
-  console.log(squares);
-
-  function restart() {}
+  function restart() {
+    setXIsPlaying(true);
+    setSquares(Array(9).fill(""));
+  }
   return (
     <div className="flex flex-col justify-center items-center h-96 w-[31rem]  mt-10 m-2">
       <div className="flex border ">
@@ -138,7 +140,7 @@ const TicTacToe = () => {
       </div>
 
       <div>{status}</div>
-      <div>
+      <div onClick={restart}>
         <button className="border p-1 mt-3 w-24">Restart</button>
       </div>
     </div>
