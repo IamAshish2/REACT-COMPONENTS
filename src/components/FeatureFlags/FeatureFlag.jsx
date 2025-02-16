@@ -8,6 +8,12 @@ import TabsParent from "../Tabs/TabsParent";
 import TreeView from "../TreeView/TreeView";
 import data from "../TreeView/data";
 
+{
+  /* <FeatureFlagGlobalState>
+        <FeatureFlag />
+      </FeatureFlagGlobalState> */
+}
+
 const FeatureFlag = () => {
   const componentsToLoad = [
     {

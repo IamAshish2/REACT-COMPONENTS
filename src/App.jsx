@@ -13,14 +13,17 @@ import TreeView from "./components/TreeView/TreeView";
 import GithubProfileLookup from "./components/GithubProfileFinder/GithubProfileLookup";
 import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComplete";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
-import FeatureFlagGlobalState, { FeatureFlagContext } from "./components/FeatureFlags/context/FeatureFlagContext";
+import FeatureFlagGlobalState, {
+  FeatureFlagContext,
+} from "./components/FeatureFlags/context/FeatureFlagContext";
+import UseFetchHookTest from "./components/useFetchHook/UseFetchHookTest";
+
 import FeatureFlag from "./components/FeatureFlags/FeatureFlag";
+
 function App() {
   return (
     <div>
-      <FeatureFlagGlobalState>
-        <FeatureFlag />
-      </FeatureFlagGlobalState>
+      <UseFetchHookTest />
     </div>
   );
 }
