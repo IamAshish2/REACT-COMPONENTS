@@ -12,10 +12,11 @@ import menus from "./components/TreeView/data";
 import TreeView from "./components/TreeView/TreeView";
 import GithubProfileLookup from "./components/GithubProfileFinder/GithubProfileLookup";
 import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComplete";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 function App() {
   return (
     <div>
-      <SearchAutoComplete />
+      <TicTacToe />
     </div>
   );
 }
