@@ -20,11 +20,12 @@ import UseFetchHookTest from "./components/useFetchHook/UseFetchHookTest";
 
 import FeatureFlag from "./components/FeatureFlags/FeatureFlag";
 import Modal from "./components/CloseOnOutsideClick/Modal";
+import WindowResizeTest from "./components/useWindowResize/WindowResizeTest";
 
 function App() {
   return (
     <div>
-      <Modal />
+      <WindowResizeTest />
     </div>
   );
 }
