@@ -21,11 +21,13 @@ import UseFetchHookTest from "./components/useFetchHook/UseFetchHookTest";
 import FeatureFlag from "./components/FeatureFlags/FeatureFlag";
 import Modal from "./components/CloseOnOutsideClick/Modal";
 import WindowResizeTest from "./components/useWindowResize/WindowResizeTest";
+import ScrollTopBottom from "./components/ScrollToSection/ScrollTopBottom";
+import ScrollToSection from "./components/ScrollToSection/ScrollToSection";
 
 function App() {
   return (
     <div>
-      <WindowResizeTest />
+      <ScrollToSection />
     </div>
   );
 }
